@@ -1,0 +1,42 @@
+.posters {
+  margin-left: 2rem;
+
+  &__heading {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  &__row {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+
+    padding: 2rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-height: 10rem;
+    object-fit: contain;
+
+    margin-right: 1rem;
+    transition: transform 450ms;
+
+    &:hover {
+      transform: scale(1.06);
+      cursor: pointer;
+    }
+  }
+
+  &__imageLarge {
+    max-height: 18rem;
+
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
+}
